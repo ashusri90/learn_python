@@ -1,0 +1,13 @@
+def fibnocci_num(number):
+    '''
+    Find out the fibnacci series for the given number.
+    
+    '''
+    fib_list = []
+    prev_num, curr_num = 0, 1
+    
+    while prev_num < number:
+        fib_list.append(prev_num)
+        prev_num, curr_num = curr_num, prev_num + curr_num
+    return fib_list
+    print (fibnocci_num(300))
