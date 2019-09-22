@@ -1,0 +1,9 @@
+# print all the common element of two lists.
+list1 = [1, 2, 3, 4, 5] 
+list2 = [5, 3, 4, 3, 9]
+
+common = []
+for num in list1:
+    if num in list2:
+        common.append(num)
+print(common)
